@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">CMPUT301_as1</string>
+    <string name="app_name">ballou-Count Book</string>
+    <string name="list_name">List of your counters:</string>
+    <string name="create_new_counter">Create a new counter</string>
+    <string name="create_counter">Create counter</string>
+    <string name="name_of_new_counter">Name of counter:</string>
+    <string name="counter_name">Counter name</string>
+    <string name="initial_value">Initial value:</string>
+    <string name="enter_number">Enter a non negative integer</string>
+    <string name="enter_comment_title">Comment:</string>
+    <string name="enter_comment">Enter a comment (optional):</string>
+    <string name="current_value">Current value:</string>
 </resources>
