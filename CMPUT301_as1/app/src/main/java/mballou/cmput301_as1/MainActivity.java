@@ -56,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Counter> counters = new ArrayList<Counter>();
     private ArrayAdapter<Counter> adapter;
 
+    /**
+     * Creates the ListView
+     * and implements button presses
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,6 +94,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    /**
+     * when returning from either CounterCreationActivity and DetailsActivity
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
@@ -109,7 +123,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    /**
+     * on start of app
+     */
     @Override
     protected void onStart(){
         super.onStart();
@@ -118,6 +134,10 @@ public class MainActivity extends AppCompatActivity {
         oldCountersList.setAdapter(adapter);
 
     }
+
+    /**
+     * saves data to Json file
+     */
     public void saveInFile() {
         try{
             FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
@@ -134,6 +154,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * loads data from Json file
+     */
     public void loadFromFile() {
         try{
             FileInputStream fis = openFileInput(FILENAME);

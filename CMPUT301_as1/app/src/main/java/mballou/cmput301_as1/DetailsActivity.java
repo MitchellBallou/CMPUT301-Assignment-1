@@ -37,6 +37,11 @@ public class DetailsActivity extends AppCompatActivity {
     private Button deleteButton;
     private Button returnButton;
 
+    /**
+     * Used to display details about a counter  and allow the user to change them
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

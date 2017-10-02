@@ -40,6 +40,11 @@ public class CounterCreationActivity extends AppCompatActivity {
     private EditText iValue;
     private Counter newCounter;
 
+    /**
+     * Creates counter objects then parcels and sends them to main
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

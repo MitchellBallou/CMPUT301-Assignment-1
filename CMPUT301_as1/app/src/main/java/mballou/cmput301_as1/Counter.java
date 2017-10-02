@@ -93,6 +93,12 @@ public class Counter implements Parcelable{
     public void setCurrentValue(int currentValue){this.currentValue = currentValue;}
     public void setComment(String comment){this.comment = comment;}
 
+    /**
+     * Creates a parcel
+     *
+     * @param pc
+     * @param flags
+     */
     @Override
     public void writeToParcel(Parcel pc, int flags){
         pc.writeString(name);
